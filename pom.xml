@@ -20,12 +20,12 @@
     <snapshotRepository>
       <id>github</id>
       <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/gn5r/mvn</url>
+      <url>https://maven.pkg.github.com/gn5r/maven-archetype-boot-autoconfigure</url>
     </snapshotRepository>
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/gn5r/mvn</url>
+      <url>https://maven.pkg.github.com/gn5r/maven-archetype-boot-autoconfigure</url>
     </repository>
   </distributionManagement>
 
