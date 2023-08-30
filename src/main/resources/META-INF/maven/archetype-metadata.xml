@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+  xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+  name="maven-archetype-boot-autoconfigure">
+
+  <requiredProperties>
+    <requiredProperty key="spring-boot-version">
+      <defaultValue>3.1.3</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="version">
+      <defaultValue>1.0.0-SNAPSHOT</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="package">
+      <defaultValue>${groupId}.${artifactId.replaceAll("-", ".")}</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="packaging">
+      <defaultValue>jar</defaultValue>
+      <validationRegex>(war|jar|pom)</validationRegex>
+    </requiredProperty>
+    <requiredProperty key="name"></requiredProperty>
+    <requiredProperty key="javaVersion">
+      <defaultValue>17</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
+
+  <fileSets>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/main/java</directory>
+    </fileSet>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/test/java</directory>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/resources</directory>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/test/resources</directory>
+    </fileSet>
+    <!-- プロジェクトルートにファイルをコピー -->
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.gitignore</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</archetype-descriptor>
