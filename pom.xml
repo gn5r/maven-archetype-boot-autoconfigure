@@ -6,7 +6,7 @@
 
   <groupId>com.github.gn5r</groupId>
   <artifactId>maven-archetype-boot-autoconfigure</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.1-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
   <url>https://github.com/gn5r/maven-archetype-boot-autoconfigure</url>
 
