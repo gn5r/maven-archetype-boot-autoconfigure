@@ -27,7 +27,7 @@ Add configuration to install this package from GitHub Packages into `~/.m2/setti
       <repositories>
         <repository>
           <id>github</id>
-          <url>https://maven.pkg.github.com/gn5r/mvn</url>
+          <url>https://maven.pkg.github.com/gn5r/maven-archetype-boot-autoconfigure</url>
           <releases>
             <updatePolicy>always</updatePolicy>
             <enabled>true</enabled>
